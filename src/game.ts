@@ -4,6 +4,7 @@ import { movePlayer} from './teleport/movePlayer';
 import { mining } from './mining/mining';
 import { compose} from './flower/compose';
 import { teacher } from './teacher/teacher';
+import { bloom } from './flower/flower';
 
 // scene('models/soulmagic_environment-rev18_guide (1).glb',
 // new Transform({
@@ -40,17 +41,17 @@ new Transform({
 }))
 
 // mining
-mining('models/mining.glb',
-new Transform({
-  position: new Vector3(5, 0, 11),
-  scale: new Vector3(2.3, 2.3, 2.3),
-  rotation: Quaternion.Euler(0 ,0 ,0)
-}))
+// mining('models/mining.glb',
+// new Transform({
+//   position: new Vector3(5, 0, 11),
+//   scale: new Vector3(2.3, 2.3, 2.3),
+//   rotation: Quaternion.Euler(0 ,0 ,0)
+// }))
 
 // teacher
 teacher('models/teacher.glb',
 new Transform({
-  position: new Vector3(47, 16, 31),
+  position: new Vector3(50.5 , 16, 31),
   // position: new Vector3(3, 0, 3),
   scale: new Vector3(0.06, 0.06, 0.06),
   rotation: Quaternion.Euler(0,0,0)
@@ -58,9 +59,14 @@ new Transform({
 )
 
 // flower
-compose('models/compose.glb',
+// let i = 5
+// for (i=0;i<6;i++){
+  compose('models/compose.glb',
 new Transform({
-  position: new Vector3(7, 0, 1),
+  position: new Vector3(27, 0, 38),
   scale: new Vector3(2.3, 2.3, 2.3),
-  rotation: Quaternion.Euler(0 ,0 ,0)
+  rotation: Quaternion.Euler(0 ,-90 ,0)
 }))
+// }
+
+bloom()
