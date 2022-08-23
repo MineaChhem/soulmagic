@@ -108,7 +108,7 @@ export function compose(model: string, transform: Transform){
     const resource = new Entity()
     resource.addComponent(new PlaneShape)
     resource.addComponent(new Transform({
-        position: new Vector3(11, 1, 5),
+        position: new Vector3(30, 1, 35),
         scale: new Vector3(1, 1, 1),
         rotation: Quaternion.Euler(0, 0, 0)
     }))
@@ -130,4 +130,9 @@ export function compose(model: string, transform: Transform){
     // ui flower
     let flower = new ui.UICounter(0, -60, 120, Color4.Green(), 60, true, 0)
     flower.hide()
+
+    // let i = 5
+    // for(i=0;i<6;i++){
+    //     plant
+    // }
 }
