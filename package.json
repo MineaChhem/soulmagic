@@ -23,7 +23,8 @@
   "dependencies": {
     "@dcl/ecs-scene-utils": "^1.7.5",
     "@dcl/npc-scene-utils": "^1.4.0",
-    "@dcl/ui-scene-utils": "^1.8.4"
+    "@dcl/ui-scene-utils": "^1.8.4",
+    "decentraland": "^3.11.2"
   },
   "bundleDependencies": [
     "@dcl/ecs-scene-utils",
