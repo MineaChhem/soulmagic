@@ -27,7 +27,7 @@ export function movePlayer(): void{
     engine.addEntity(secretRoom)
     secretRoom.addComponent(bookModel)
     secretRoom.addComponent(new Transform({
-        position: new Vector3(78.3, 2.3, 23),
+        position: new Vector3(79.35, 2.3, 23.9),
         scale: new Vector3(0.35, 0.35, 0.35),
         rotation: Quaternion.Euler(-5,120,-15)
     }))
@@ -37,7 +37,7 @@ export function movePlayer(): void{
             ()=>{
                 portal(
                     new Transform({
-                        position: new Vector3(78.5, 0, 22.5),
+                        position: new Vector3(79, 0.5, 24),
                         scale: new Vector3(0.5, 0.5, 0.5)})
                 )
                 // engine.addEntity(recall)
@@ -69,7 +69,7 @@ export function movePlayer(): void{
     const coat = new GLTFShape('models/Cross.glb')
     // stand desk
     obj(coat,new Transform({
-        position: new Vector3(41.9, 26.3, 36.1),
+        position: new Vector3(39.2, 26.3, 38.40),
         scale: new Vector3(3, 3, 3),
         rotation: Quaternion.Euler(0, 0, 0)
     }))
@@ -78,7 +78,7 @@ export function movePlayer(): void{
     engine.addEntity(back)
     back.addComponent(bookModel)
     back.addComponent(new Transform({
-        position:new Vector3(42, 28, 36.2),
+        position:new Vector3(39.3, 28, 38.6),
         scale: new Vector3(0.3, 0.3, 0.3),
         rotation: Quaternion.Euler(-5,90,-15)
     }))
