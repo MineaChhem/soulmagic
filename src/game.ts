@@ -6,13 +6,6 @@ import { compose} from './flower/compose';
 import { teacher } from './teacher/teacher';
 import { bloom } from './flower/flower';
 
-// scene('models/soulmagic_environment-rev18_guide (1).glb',
-// new Transform({
-//   position: new Vector3(43.3, 0, 48),
-//   rotation: Quaternion.Euler(0,0,0),
-//   scale: new Vector3(1.45, 1.45, 1.45)
-// }))
-
 // castle
 scene('models/soulmagic_environment-rev35.glb',
 new Transform({
@@ -40,13 +33,6 @@ new Transform({
   rotation: Quaternion.Euler(0 ,180 ,0)
 }))
 
-// mining
-// mining('models/mining.glb',
-// new Transform({
-//   position: new Vector3(5, 0, 11),
-//   scale: new Vector3(2.3, 2.3, 2.3),
-//   rotation: Quaternion.Euler(0 ,0 ,0)
-// }))
 
 // teacher
 teacher('models/teacher.glb',
@@ -65,5 +51,3 @@ new Transform({
   scale: new Vector3(2.3, 2.3, 2.3),
   rotation: Quaternion.Euler(0 ,-90 ,0)
 }))
-
-// bloom()
