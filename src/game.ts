@@ -14,19 +14,19 @@ import { bloom } from './flower/flower';
 // }))
 
 // castle
-scene('models/soulmagic_environment-rev18_castle.glb',
+scene('models/soulmagic_environment-rev35.glb',
 new Transform({
-  position: new Vector3(44, 0, 46),
-  scale: new Vector3(1.41,1.41,1.41),
+  position: new Vector3(46, 0, 43),
+  scale: new Vector3(7.55,7.55,7.55),
   rotation: Quaternion.Euler(0,0,0)
 }))
 
 // background tree
-scene('models/background.glb',
+scene('models/soulmagic_environment-rev30_tree.glb',
 new Transform({
     position: new Vector3(43.3, 0, 48),
     rotation: Quaternion.Euler(0,0,0),
-    scale: new Vector3(1.42, 1.42, 1.42)
+    scale: new Vector3(14.3, 14.3, 14.3)
 }))
 
 // teleport
@@ -51,22 +51,19 @@ new Transform({
 // teacher
 teacher('models/teacher.glb',
 new Transform({
-  position: new Vector3(50.5 , 16, 31),
+  position: new Vector3(48 , 16, 32),
   // position: new Vector3(3, 0, 3),
   scale: new Vector3(0.06, 0.06, 0.06),
   rotation: Quaternion.Euler(0,0,0)
 })
 )
 
-// flower
-// let i = 5
-// for (i=0;i<6;i++){
-  compose('models/compose.glb',
+
+compose('models/compose.glb',
 new Transform({
   position: new Vector3(27, 0, 38),
   scale: new Vector3(2.3, 2.3, 2.3),
   rotation: Quaternion.Euler(0 ,-90 ,0)
 }))
-// }
 
-bloom()
+// bloom()
