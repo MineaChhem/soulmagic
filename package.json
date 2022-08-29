@@ -17,8 +17,8 @@
     "decentraland-ecs": "^6.11.4"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
+    "node": ">=13.1.0",
+    "npm": ">=6.12.1"
   },
   "dependencies": {
     "@dcl/ecs-scene-utils": "^1.7.5",
