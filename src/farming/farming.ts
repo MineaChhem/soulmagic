@@ -91,8 +91,9 @@ export function farming(model: string, transform:Transform){
             log('activate')
             farmer.talk(farmer_chat,0)
         },{
-            idleAnim: 'play',
-            // portrait:{path: '', height:350, width: 350},
+            idleAnim: 'hoe',
+            portrait:{path:'images/farmer.png',height:400, width: 400,offsetX:-50,offsetY:79,section:{sourceHeight:400, sourceWidth:400}},
+            
             turningSpeed: 2,
             faceUser: true,
             darkUI: true,
@@ -105,7 +106,7 @@ export function farming(model: string, transform:Transform){
             continueOnWalkAway: false,
             onWalkAway() {
                 log('WalkAway')
-                this.idleAnim = 'play'
+                this.idleAnim = 'hoe'
                 
             }
         })

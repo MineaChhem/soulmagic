@@ -26,10 +26,10 @@ new Transform({
 movePlayer()
 
 // farming
-farming("models/npc.glb",
+farming("models/farmer.glb",
 new Transform({
   position: new Vector3(25, 0, 35),
-  scale: new Vector3(2.3, 2.3, 2.3),
+  scale: new Vector3(36.5, 36.5, 36.5),
   rotation: Quaternion.Euler(0 ,180 ,0)
 }))
 
@@ -47,7 +47,7 @@ new Transform({
 
 compose('models/compose.glb',
 new Transform({
-  position: new Vector3(27, 0, 38),
+  position: new Vector3(27, 0.1, 38),
   scale: new Vector3(2.3, 2.3, 2.3),
   rotation: Quaternion.Euler(0 ,-90 ,0)
 }))
