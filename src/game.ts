@@ -6,11 +6,19 @@ import { compose} from './flower/compose';
 import { teacher } from './teacher/teacher';
 import { bloom } from './flower/flower';
 
+// soulmagic_environment-rev31_castle
 // castle
-scene('models/soulmagic_environment-rev35.glb',
+// scene('models/soulmagic_environment-rev35.glb',
+// new Transform({
+//   position: new Vector3(46, 0, 43),
+//   scale: new Vector3(7.55,7.55,7.55),
+//   rotation: Quaternion.Euler(0,0,0)
+// }))
+
+scene('models/soulmagic_environment-rev31_castle.glb',
 new Transform({
-  position: new Vector3(46, 0, 43),
-  scale: new Vector3(7.55,7.55,7.55),
+  position: new Vector3(47.5, 0.1, 40.5),
+  scale: new Vector3(14.3,14.3,14.3),
   rotation: Quaternion.Euler(0,0,0)
 }))
 
