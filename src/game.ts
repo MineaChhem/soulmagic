@@ -5,6 +5,7 @@ import { mining } from './mining/mining';
 import { compose} from './flower/compose';
 import { teacher } from './teacher/teacher';
 import { bloom } from './flower/flower';
+import { guard } from './guard/guard';
 
 // soulmagic_environment-rev31_castle
 // castle
@@ -41,6 +42,13 @@ new Transform({
   rotation: Quaternion.Euler(0 ,180 ,0)
 }))
 
+// guard
+guard('models/guard.glb',
+new Transform({
+  position: new Vector3(42, 0, 41),
+  scale: new Vector3(0.34, 0.34, 0.34),
+  rotation: Quaternion.Euler(0, 180, 0)
+}))
 
 // teacher
 teacher('models/teacher_npc.glb',
@@ -52,7 +60,7 @@ new Transform({
 })
 )
 
-
+// flower
 compose('models/compose.glb',
 new Transform({
   position: new Vector3(27, 0.1, 38),
