@@ -15,7 +15,7 @@ import { bloom } from './flower/flower';
 //   rotation: Quaternion.Euler(0,0,0)
 // }))
 
-scene('models/soulmagic_environment-rev31_castle.glb',
+scene('models/soulmagic_environment-rev33_castle.glb',
 new Transform({
   position: new Vector3(47.5, 0.1, 40.5),
   scale: new Vector3(14.3,14.3,14.3),
@@ -34,7 +34,7 @@ new Transform({
 movePlayer()
 
 // farming
-farming("models/farmer.glb",
+farming("models/farmernpc.glb",
 new Transform({
   position: new Vector3(25, 0, 35),
   scale: new Vector3(36.5, 36.5, 36.5),
@@ -43,7 +43,7 @@ new Transform({
 
 
 // teacher
-teacher('models/teacher.glb',
+teacher('models/teacher_npc.glb',
 new Transform({
   position: new Vector3(48 , 16, 32),
   // position: new Vector3(3, 0, 3),
@@ -59,3 +59,5 @@ new Transform({
   scale: new Vector3(2.3, 2.3, 2.3),
   rotation: Quaternion.Euler(0 ,-90 ,0)
 }))
+
+

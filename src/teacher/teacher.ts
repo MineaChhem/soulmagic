@@ -88,7 +88,14 @@ export function teacher(model: string, transform:Transform){
             teacher.talk(teacher_chat,0)
         },{
             idleAnim: 'play',
-            portrait:{path: 'images/teacher.png',height:400, width: 400,offsetX:-50,offsetY:79,section:{sourceHeight:400, sourceWidth:400}},
+            portrait:{
+                path: 'images/teacher.png',
+                height:400, 
+                width: 400,
+                offsetX:-50,
+                offsetY:79,
+                section:{sourceHeight:400, sourceWidth:400}
+            },
             onlyClickTrigger: true,
             faceUser: true,
             reactDistance: 6,

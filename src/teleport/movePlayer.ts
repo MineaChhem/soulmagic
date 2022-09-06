@@ -78,7 +78,7 @@ export function movePlayer(): void{
     engine.addEntity(back)
     back.addComponent(bookModel)
     back.addComponent(new Transform({
-        position:new Vector3(39.3, 28, 38.6),
+        position:new Vector3(39, 28, 40),
         scale: new Vector3(0.3, 0.3, 0.3),
         rotation: Quaternion.Euler(-5,90,-15)
     }))
