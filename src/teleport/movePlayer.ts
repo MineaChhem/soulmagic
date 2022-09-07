@@ -1,5 +1,4 @@
 import * as utils from '@dcl/ecs-scene-utils';
-import { getExplorerConfiguration } from '@decentraland/EnvironmentAPI';
 import { movePlayerTo } from '@decentraland/RestrictedActions';
 
 export function movePlayer(): void{
@@ -40,30 +39,11 @@ export function movePlayer(): void{
                         position: new Vector3(79, 0.5, 24),
                         scale: new Vector3(0.5, 0.5, 0.5)})
                 )
-                // engine.addEntity(recall)
-                // teleport.play()
-                // utils.setTimeout(2300, ()=>{
-                //     movePlayerTo({x:-0.5, y:21, z:-4},{x:-10, y:21, z:-15})
-                //     engine.removeEntity(recall)
-                // })
             },{
                 button: ActionButton.POINTER, hoverText: "Secret Room",showFeedback: true, distance: 6
             }
         )
     )
-    
-    // secretRoom.addComponent(
-    //     new utils.TriggerComponent(
-    //         new utils.TriggerSphereShape(3),{
-    //             onCameraEnter() {
-    //                 log('activate')
-    //                 utils.setTimeout(3000, ()=>{
-    //                     movePlayerTo({x:-0.5, y:21, z:-4},{x:-10, y:3, z:-15})
-    //                 })
-    //             }
-    //         }
-    //     )
-    // )
     
     // Entity
     const coat = new GLTFShape('models/Cross.glb')
@@ -94,17 +74,6 @@ export function movePlayer(): void{
             }
         )
     )
-    // let animator = new Animator()
-    // let animator = new Animator()
-    // const recall = new Entity()
-    // recall.addComponent(new GLTFShape('models/recall.glb'))
-    // recall.addComponent(new Transform({
-    //     position: new Vector3(-24.85, 0, 8.06),
-    //     scale: new Vector3(1, 1, 1)
-    // }))
-    // let teleport = new AnimationState('recallAction.003')
-    // recall.addComponent(animator).addClip(teleport)
-    // engine.removeEntity(recall)
 }
 function portal(transform: Transform){
     let animator = new Animator()
