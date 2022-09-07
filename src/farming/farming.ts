@@ -63,7 +63,7 @@ export function farming(model: string, transform:Transform){
         },{
             text:"Have a good day Sir/M'dam:)!",
             triggeredByNext() {
-                farmer.playAnimation('',true,3)
+                farmer.playAnimation('hoe',true,3)
             },
             offsetX:60,
             offsetY:0,

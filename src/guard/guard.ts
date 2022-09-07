@@ -45,21 +45,7 @@ export function guard(model: string, transform:Transform){
             offsetY:0,
             fontSize:34,
             typeSpeed:30,
-        },
-        // {
-        //     text:"Second Waiting for mining until it getting finish,And than harvest it!",
-        //     offsetX:60,
-        //     offsetY:0,
-        //     fontSize:34,
-        //     typeSpeed:30,
-        // },{
-        //     text:"You can mining by doing step by step!!!",
-        //     offsetX:60,
-        //     offsetY:0,
-        //     fontSize:34,
-        //     typeSpeed:30,
-        // },
-        {
+        },{
             text:"Have a good day Sir/M'dam:)!",
             triggeredByNext() {
                 guard.playAnimation('',true,3)
@@ -112,11 +98,6 @@ export function guard(model: string, transform:Transform){
             onWalkAway() {
                 log('WalkAway')
                 guard.playAnimation('play')
-                // guard.addComponent(
-                //     new Transform({
-                //         rotation: Quaternion.Euler(0 , 180, 0)
-                //     })
-                // )
             }
         })
 }

@@ -53,7 +53,6 @@ new Transform({
 teacher('models/teacher_npc.glb',
 new Transform({
   position: new Vector3(48 , 16, 32),
-  // position: new Vector3(3, 0, 3),
   scale: new Vector3(0.06, 0.06, 0.06),
   rotation: Quaternion.Euler(0,0,0)
 })
