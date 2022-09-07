@@ -130,9 +130,4 @@ export function compose(model: string, transform: Transform){
     // ui flower
     let flower = new ui.UICounter(0, -60, 120, Color4.Green(), 60, true, 0)
     flower.hide()
-
-    // let i = 5
-    // for(i=0;i<6;i++){
-    //     plant
-    // }
 }
