@@ -1,10 +1,7 @@
 import { NPC } from '@dcl/npc-scene-utils';
 import { Dialog } from '@dcl/npc-scene-utils';
 export function farming(model: string, transform:Transform){
-    // const farmer = new Entity()
-    // farmer.addComponent(new GLTFShape(model))
-    // farmer.addComponent(transform)
-    // engine.addEntity(farmer)
+    
     const farmer_chat: Dialog[] = [
         {   
             // one
