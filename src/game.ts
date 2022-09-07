@@ -1,7 +1,6 @@
 import { farming } from './farming/farming';
 import { scene } from './scene/scene';
 import { movePlayer} from './teleport/movePlayer';
-import { mining } from './mining/mining';
 import { compose} from './flower/compose';
 import { teacher } from './teacher/teacher';
 import { bloom } from './flower/flower';
