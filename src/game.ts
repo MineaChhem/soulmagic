@@ -55,5 +55,3 @@ new Transform({
   scale: new Vector3(2.3, 2.3, 2.3),
   rotation: Quaternion.Euler(0 ,-90 ,0)
 }))
-
-
