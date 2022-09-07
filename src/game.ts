@@ -13,11 +13,11 @@ new Transform({
 }))
 
 // background tree
-scene('models/soulmagic_environment-rev30_tree.glb',
+scene('models/soulmagic_environment-rev33_tree.glb',
 new Transform({
-    position: new Vector3(43.3, 0, 48),
+    position: new Vector3(49.8, 0, 39.32),
     rotation: Quaternion.Euler(0,0,0),
-    scale: new Vector3(14.3, 14.3, 14.3)
+    scale: new Vector3(14.38, 14.38, 14.38)
 }))
 
 // teleport
