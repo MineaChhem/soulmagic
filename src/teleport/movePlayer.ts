@@ -26,7 +26,7 @@ export function movePlayer(): void{
     engine.addEntity(secretRoom)
     secretRoom.addComponent(bookModel)
     secretRoom.addComponent(new Transform({
-        position: new Vector3(79.35, 2.3, 23.9),
+        position: new Vector3(79.35, 3, 23.9),
         scale: new Vector3(0.35, 0.35, 0.35),
         rotation: Quaternion.Euler(-5,120,-15)
     }))
