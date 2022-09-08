@@ -30,12 +30,8 @@ export function teacher(model: string, transform:Transform){
             typeSpeed:30,
             isQuestion: true,
             buttons:[
-                {label: 'Yes', goToDialog: 'yes',triggeredActions() {
-                    
-                },},
-                {label: 'No',goToDialog:'no',triggeredActions() {
-                    
-                },}
+                {label: 'Yes', goToDialog:'yes'},
+                {label: 'No',goToDialog:'no'}
             ]
         },{
             name:'yes',
@@ -59,7 +55,7 @@ export function teacher(model: string, transform:Transform){
         },{
             text:"Have a good day Sir/M'dam:)!",
             triggeredByNext() {
-                teacher.playAnimation('',true,3)
+                teacher.playAnimation('play',true,3)
             },
             offsetX:60,
             offsetY:0,
